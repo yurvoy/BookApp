@@ -21,7 +21,7 @@ public class Utilities {
         for (Book book : books) {
             authors.add(book.author);
         }
-        Person youngest =  authors.stream()
+        Person youngest = authors.stream()
                 .max(Comparator.comparing(Person::getDateOfBirth))
                 .get();
         System.out.println("Youngest Author : " + youngest);
