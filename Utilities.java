@@ -29,7 +29,7 @@ public class Utilities {
 //    }
 
     public static void printYoungestWriter(Book[] books) {
-        List<Person> authors = new ArrayList<>();
+        Collection<Person> authors = new HashSet<>();
         for (Book book : books) {
             authors.add(book.author);
         }
