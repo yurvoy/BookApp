@@ -32,4 +32,14 @@ public class Book {
     public Person getAuthor() {
         return author;
     }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "title='" + title + '\'' +
+                ", genre='" + genre + '\'' +
+                ", releaseDate=" + releaseDate +
+                ", author=" + author +
+                '}';
+    }
 }
